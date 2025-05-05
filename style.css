@@ -102,7 +102,7 @@ body {
   margin: 0 auto;
 }
 
-.about p {
+.github {
   text-decoration: none;
   color: var(--secondary-color);
 }
