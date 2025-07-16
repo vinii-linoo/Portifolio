@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portifólio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="particulas"></div>
+
+
+	<nav class="navegacao">
+		<ul class="menu">
+			<li>
+				<a href="#inicio" class="menu-link">Início</a>
+			</li>
+
+			<li>
+				<a href="#sobre" class="menu-link">Sobre</a>
+			</li>
+
+			<li>
+				<a href="#projetos" class="menu-link">Projetos</a>
+			</li>
+
+			<li>
+				<a href="#contato" class="menu-link">Contato</a>
+			</li>
+
+		</ul>
+
+	</nav>
+
+	<main class="cabecalho" id="inicio">
+		<img src="./img/vini.png" alt="Foto de Vinícius Lino" class="foto-perfil">
+		<h1>Vinícius Lino</h1>
+		<p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+	</main>
+
+	<section id="sobre" class="sobre">
+		<h2 class="sobre-titulo">Sobre Mim</h2>
+		<div class="sobre-caixa">
+			<p class="sobre-paragrafo">Sou um desenvolvedor web júnior com maior familiaridade na área de front-end.
+				Tenho conhecimentos em
+				HTML, CSS e JavaScript, e experiência com criação de interfaces responsivas, interativas e voltadas para
+				a boa experiência do usuário. Estou em constante aprendizado de frameworks como React e buscando
+				aprimorar minhas habilidades em acessibilidade, performance e boas práticas de desenvolvimento.</p>
+		</div>
+	</section>
+
+	<section id="projetos" class="projetos">
+		<h2 class="projetos-titulo">Meus Projetos</h2>
+		<div class="projetos-caixa">
+			<div class="projetos-card">
+				<img src="./img/conversor.png" alt="Conversor de Moedas" class="projetos-imagem">
+				<div class="caixa-textos-projetos">
+					<h3 class="info-projetos">Conversor de Moedas</h3>
+					<p class="paragrafo-projetos">Projeto que permite converter valores entre diferentes moedas de forma
+						prática e rápida.
+						Utiliza HTML, CSS e JavaScript, com consumo de API para taxas de câmbio atualizadas.
+						Possui uma interface simples e responsiva, facilitando o uso em qualquer dispositivo.
+						Ideal para quem precisa fazer conversões de forma eficiente no dia a dia.</p>
+				</div>
+			</div>
+
+			<div class="projetos-card">
+				<img src="./img/metas.png" alt="Metas Financeiras" class="projetos-imagem">
+				<div class="caixa-textos-projetos">
+					<h3 class="info-projetos">Metas Financeiras</h3>
+					<p class="paragrafo-projetos">Aplicação interativa para ajudar no controle de metas financeiras
+						pessoais.
+						Permite ao usuário definir metas, valores e acompanhar o progresso por meio de uma barra visual.
+						Desenvolvido com foco na organização financeira de forma prática e intuitiva.
+						Utiliza HTML, CSS e JavaScript para criar uma experiência limpa e funcional.</p>
+				</div>
+			</div>
+
+			<div class="projetos-card">
+				<img src="./img/store.png" alt="Loja Virtual" class="projetos-imagem">
+				<div class="caixa-textos-projetos">
+					<h3 class="info-projetos">Loja Virtual</h3>
+					<p class="paragrafo-projetos">Plataforma de e-commerce que permite a venda de produtos online.
+						Desenvolvida com foco na experiência do usuário, a loja virtual é responsiva e fácil de navegar.
+						Utiliza HTML, CSS e JavaScript, além de integração com APIs de pagamento.</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="contato" class="contato">
+		<h2 class="contato-titulo">Entre em Contato</h2>
+		<form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+			<div class="grupo-form">
+				<input type="text" placeholder="Nome" class="campo-form" id="nome">
+			</div>
+
+			<div class="grupo-form">
+				<textarea class="campo-form" placeholder="Digite sua mensagem aqui..." rows="6"
+					id="mensagem"></textarea>
+			</div>
+
+			<button type="submit" class="botao-form">Enviar Whatsapp</button>
+		</form>
+	</section>
+
+</body>
+<!-- <script src="script.js"></script> -->
+
+<script>
+
+	function enviarWhats(event) {
+		event.preventDefault(); // Impede o envio do formulário padrão
+
+		const nome = document.getElementById('nome').value;
+		const mensagem = document.getElementById('mensagem').value;
+		const telefone = '5519993505412';
+
+		const texto = `Olá! Meu nome é ${nome}, ${mensagem}`;
+		const msgFormatada = encodeURIComponent(texto);
+
+		const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+		console.log(url); // Exibe a URL formatada no console para depuração
+
+		window.open(url, '_blank');
+	}
+
+</script>
+
+</html>
