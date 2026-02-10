@@ -71,7 +71,7 @@ body {
 }
 
 .foto-perfil {
-    width: 290px;
+    width: 275px;
     height: 300px;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
@@ -89,6 +89,33 @@ h1 {
 .cabecalho-sub-titulo {
     font-size: 1.5rem;
     color: var(--claro);
+}
+
+.cabecalho a {
+    display: inline-block;
+    margin: 0 10px;
+    margin-top: 20px;
+    padding: 15px 20px;
+    color: var(--claro);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cabecalho a:hover {
+    transform: scale(1.1);
+}
+
+.cabecalho .instagram {
+    background: #FF00CC;
+    background: linear-gradient(30deg, rgba(255, 0, 204, 1) 0%, rgba(138, 43, 226, 1) 35%, rgba(75, 0, 255, 1) 65%, rgba(0, 123, 255, 1) 100%);
+
+}
+
+.cabecalho .github {
+    background-color: #000;
 }
 
 .sobre {
@@ -116,6 +143,81 @@ h1 {
     text-align: center;
     margin-bottom: 0.7rem;
 }
+
+.tech-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* se faltar espaço, quebra linha */
+}
+
+.tech {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    /* quadrado arredondado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    transition: 0.3s;
+}
+
+.tech-titulo {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--claro);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.tech:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+/* CORES DE CADA TECNOLOGIA */
+.html {
+    background-color: #E34F26;
+}
+
+.css {
+    background-color: #1572B6;
+}
+
+.js {
+    background-color: #F7DF1E;
+    color: black;
+}
+
+.java {
+    background-color: #007396;
+}
+
+.cpp {
+    background-color: #00599C;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.php {
+    background-color: #777BB4;
+}
+
+.mysql {
+    background-color: #00758F;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
 
 .projetos {
     padding: 6rem 2rem;
@@ -170,6 +272,17 @@ h1 {
     line-height: 1.25rem;
 }
 
+.projetos-card .linguagens {
+    background: rgba(255, 255, 255, 0.055);
+    color: rgba(226, 232, 240, 0.8);
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: 2px solid #ffffff9d;
+    border-radius: 5px;
+
+}
+
 .contato {
     padding: 6rem 2rem;
 }
@@ -219,7 +332,7 @@ h1 {
     cursor: pointer;
     font-weight: bold;
     width: 100%;
-    transition: all 0.5s ease; 
+    transition: all 0.5s ease;
 }
 
 
@@ -236,13 +349,20 @@ h1 {
     height: 100%;
     z-index: -6;
     opacity: 0.5;
-    background: 
-    radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
-    var(--maisEscuro);
+    background:
+        radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
+        var(--maisEscuro);
 }
 
 @keyframes flutuar {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
