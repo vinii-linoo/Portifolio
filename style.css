@@ -201,7 +201,7 @@ h1 {
 }
 
 .cpp {
-    background-color: #00599C;
+    background-color: #004a83;
     font-size: 25px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
@@ -275,6 +275,7 @@ h1 {
 .projetos-card .linguagens {
     background: rgba(255, 255, 255, 0.055);
     color: rgba(226, 232, 240, 0.8);
+    font-weight: bold;
     display: inline-block;
     padding: 5px 10px;
     margin-top: 10px;
