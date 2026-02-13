@@ -356,6 +356,44 @@ h1 {
         var(--maisEscuro);
 }
 
+.overlay-projetos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar overlay no hover */
+.projetos-card:hover .overlay-projetos {
+  opacity: 1;
+}
+
+/* Botões dentro do overlay */
+.overlay-projetos button {
+  padding: 15px 20px;
+  border: none;
+  background-color: #9b24fc;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.overlay-projetos button:hover {
+  background-color: #7a0ed3;
+  transform: scale(1.2);
+  box-shadow: 0px 5px 10px #9b24fc;
+}
+
 @keyframes flutuar {
 
     0%,

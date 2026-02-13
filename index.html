@@ -38,7 +38,7 @@
 	<main class="cabecalho" id="inicio">
 		<img src="./img/vini.png" alt="Foto de Vinícius Lino" class="foto-perfil">
 		<h1>Vinícius Lino</h1>
-		<p class="cabecalho-sub-titulo">Engenheiro de Software</p>
+		<p class="cabecalho-sub-titulo">Dev de Sistemas e Engenheiro de Software</p>
 
 		<div class="redes-sociais">
 			<a href="https://www.instagram.com/reall.linoo/" target="_blank" class="instagram"><i
@@ -53,24 +53,24 @@
 		<h2 class="sobre-titulo">Sobre Mim</h2>
 		<div class="sobre-caixa">
 			<p class="sobre-paragrafo">Sou desenvolvedor de sistemas e estudante de Engenharia de Software,
-				 com foco em front-end. Tenho experiência na criação de interfaces responsivas e interativas,
-				 sempre buscando entregar uma boa experiência ao usuário.
-				 Atualmente, venho aplicando React e TailwindCSS em projetos pessoais e aprimorando meus conhecimentos
-				 em acessibilidade, performance e boas práticas.</p>
+				com foco em front-end. Tenho experiência na criação de interfaces responsivas e interativas,
+				sempre buscando entregar uma boa experiência ao usuário.
+				Atualmente, venho aplicando React e TailwindCSS em projetos pessoais e aprimorando meus conhecimentos
+				em acessibilidade, performance e boas práticas.</p>
 
-				<div class="tech-titulo">
-					<p>Tecnologias</p>
-				</div>
+			<div class="tech-titulo">
+				<p>Tecnologias</p>
+			</div>
 
-				<div class="tech-icons">
-					<div class="tech html"><i class="fa-brands fa-html5"></i></div>
-					<div class="tech css"><i class="fa-brands fa-css3-alt"></i></div>
-					<div class="tech js"><i class="fa-brands fa-js"></i></div>
-					<div class="tech java"><i class="fa-brands fa-java"></i></div>
-					<div class="tech cpp"><img src="./img/c++.svg" alt=""></div>
-					<div class="tech php"><i class="fa-brands fa-php"></i></div>
-					<div class="tech mysql"><img src="./img/mysql.svg" alt=""></div>
-				</div>
+			<div class="tech-icons">
+				<div class="tech html"><i class="fa-brands fa-html5"></i></div>
+				<div class="tech css"><i class="fa-brands fa-css3-alt"></i></div>
+				<div class="tech js"><i class="fa-brands fa-js"></i></div>
+				<div class="tech java"><i class="fa-brands fa-java"></i></div>
+				<div class="tech cpp"><img src="./img/c++.svg" alt=""></div>
+				<div class="tech php"><i class="fa-brands fa-php"></i></div>
+				<div class="tech mysql"><img src="./img/mysql.svg" alt=""></div>
+			</div>
 		</div>
 
 	</section>
@@ -79,7 +79,11 @@
 		<h2 class="projetos-titulo">Meus Projetos</h2>
 		<div class="projetos-caixa">
 			<div class="projetos-card">
-				<img src="./img/conversor.png" alt="Conversor de Moedas" class="projetos-imagem">
+				<img src="/img/conversor.png" alt="Conversor de Moedas" class="projetos-imagem">
+				<div class="overlay-projetos">
+					<button onclick="window.open('https://github.com/vinii-linoo/Conversor-Moeda', '_blank')">GitHub</button>
+					<button onclick="window.open('https://vinii-linoo.github.io/Conversor-Moeda/', '_blank')">Visualizar</button>
+				</div>
 				<div class="caixa-textos-projetos">
 					<h3 class="info-projetos">Conversor de Moedas</h3>
 					<p class="paragrafo-projetos">Projeto que permite converter valores entre diferentes moedas de forma
@@ -91,11 +95,16 @@
 					<p class="linguagens">HTML 5</p>
 					<p class="linguagens">CSS 3</p>
 					<p class="linguagens">JavaScript</p>
+					<p class="linguagens">API</p>
 				</div>
 			</div>
 
 			<div class="projetos-card">
-				<img src="./img/metas.png" alt="Metas Financeiras" class="projetos-imagem">
+				<img src="/img/metas.png" alt="Metas Financeiras" class="projetos-imagem">
+				<div class="overlay-projetos">
+					<button onclick="window.open('https://github.com/vinii-linoo/Metas-Financeiras', '_blank')">GitHub</button>
+					<button onclick="window.open('https://vinii-linoo.github.io/Metas-Financeiras/', '_blank')">Visualizar</button>
+				</div>
 				<div class="caixa-textos-projetos">
 					<h3 class="info-projetos">Metas Financeiras</h3>
 					<p class="paragrafo-projetos">Aplicação interativa para ajudar no controle de metas financeiras
@@ -110,15 +119,42 @@
 				</div>
 			</div>
 
-			<!-- <div class="projetos-card">
-				<img src="./img/store.png" alt="Loja Virtual" class="projetos-imagem">
-				<div class="caixa-textos-projetos">
-					<h3 class="info-projetos">Loja Virtual</h3>
-					<p class="paragrafo-projetos">Plataforma de e-commerce que permite a venda de produtos online.
-						Desenvolvida com foco na experiência do usuário, a loja virtual é responsiva e fácil de navegar.
-						Utiliza HTML, CSS e JavaScript, além de integração com APIs de pagamento.</p>
+			<div class="projetos-card">
+				<img src="/img/iphone.png" alt="iPhone 17" class="projetos-imagem">
+				<div class="overlay-projetos">
+					<button onclick="window.open('https://github.com/vinii-linoo/iphone-website', '_blank')">GitHub</button>
+					<button onclick="window.open('https://iphone-website-black.vercel.app', '_blank')">Visualizar</button>
 				</div>
-			</div> -->
+				<div class="caixa-textos-projetos">
+					<h3 class="info-projetos">Apple Store Clone — iPhone 17 (Purchase Page UI)</h3>
+					<p class="paragrafo-projetos">Clone inspirado na página oficial de compra da Apple,
+						recriando a interface de aquisição do iPhone 17 com foco em design minimalista,
+						responsividade e experiência do usuário.</p>
+
+					<p class="linguagens">React</p>
+					<p class="linguagens">Vite</p>
+					<p class="linguagens">TailwindCSS</p>
+				</div>
+			</div>
+
+			<div class="projetos-card">
+				<img src="/img/climate.png" alt="Clima" class="projetos-imagem">
+				<div class="overlay-projetos">
+					<button onclick="window.open('https://github.com/vinii-linoo/climate', '_blank')">GitHub</button>
+					<button onclick="window.open('https://climate-nine.vercel.app', '_blank')">Visualizar</button>
+				</div>
+				<div class="caixa-textos-projetos">
+					<h3 class="info-projetos">Previsão do Tempo</h3>
+					<p class="paragrafo-projetos">Aplicação que permite visualizar informações climáticas em tempo real.
+						Utiliza uma API para obter dados meteorológicos atualizados de diversas cidades.
+						Interface intuitiva e responsiva, ideal para consulta rápida de condições climáticas.</p>
+
+					<p class="linguagens">HTML 5</p>
+					<p class="linguagens">CSS 3</p>
+					<p class="linguagens">JavaScript</p>
+					<p class="linguagens">API</p>
+				</div>
+			</div>
 		</div>
 
 	</section>
